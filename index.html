@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Alumglass Esquadrias">
+<meta property="og:description" content="Esquadrias de alumínio de médio e alto padrão em Campinas e região.">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F171E'/%3E%3Cpath d='M9 24 16 8l7 16' stroke='%238DC63F' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<title>Alumglass Esquadrias</title>
+<meta name="description" content="Esquadrias de alumínio de médio e alto padrão em Campinas e região. Fabricação própria, equipe treinada e mais de 700 contratos entregues em 16 anos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* Layout: full-bleed photo hero → proof band → editorial sections on a warm-neutral/ink rhythm, one framing move per section */
+:root{
+  --ink:#0F171E; --ink-2:#26333F; --muted:#5E6A73; --line:#E2E0DA;
+  --paper:#FFFFFF; --sand:#F4F2EE; --blue:#1D6FB0; --lime:#8DC63F; --lime-d:#5E8F22;
+  --wa:#1FAF5A; --wa-h:#189A4E;
+  --f-sans:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --r:16px; color-scheme:light;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f-sans);color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.wrap{width:100%;max-width:1240px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{letter-spacing:-.028em;line-height:1.06;text-wrap:balance}
+h2{font-size:clamp(32px,4vw,52px);font-weight:800}
+.lead{color:var(--muted);font-size:17px;max-width:52ch}
+section{padding-block:clamp(72px,9vw,120px)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 15.5px/1 var(--f-sans);padding:17px 26px;border-radius:999px;border:0;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-h)}
+.btn-ink{background:var(--ink);color:#fff}
+.tlink{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15.5px;padding-bottom:4px;border-bottom:1.5px solid currentColor}
+.tlink span{transition:transform .2s}
+.tlink:hover span{transform:translateX(4px)}
+
+/* hero */
+.hero{position:relative;min-height:clamp(620px,92vh,860px);display:flex;flex-direction:column;color:#fff;background:var(--ink) center/cover no-repeat;background-image:url(img/hero.jpg);isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(9,14,19,.86) 0%,rgba(9,14,19,.62) 38%,rgba(9,14,19,.08) 72%),linear-gradient(180deg,rgba(9,14,19,.45) 0%,transparent 22%)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:26px}
+.word{font-weight:600;letter-spacing:.32em;font-size:17px}
+.word b{font-weight:800;color:var(--lime)}
+.menu{display:flex;gap:34px;font-size:15px;font-weight:500;color:rgba(255,255,255,.88)}
+.menu a:hover{color:#fff}
+.nav .btn{padding:13px 22px;font-size:14.5px}
+.hero-body{flex:1;display:flex;align-items:center;padding-block:40px 80px}
+.hero h1{font-size:clamp(38px,5vw,72px);font-weight:700;max-width:16ch}
+.hero p{font-size:clamp(17px,1.5vw,20px);color:rgba(255,255,255,.82);max-width:40ch;margin-top:26px}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px;margin-top:40px}
+.hero .tlink{color:#fff}
+
+/* proof */
+.proof{border-bottom:1px solid var(--line);padding-block:0}
+.proof .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.proof .wrap>div{padding:40px 32px;border-left:1px solid var(--line)}
+.proof .wrap>div:first-child{border-left:0;padding-left:0}
+.proof strong{display:block;font-size:clamp(34px,3.6vw,48px);font-weight:800;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.proof span{display:block;margin-top:10px;color:var(--muted);font-size:15px}
+.proof .stars{display:inline;margin:0;color:#E9A90E;letter-spacing:2px;font-size:14px}
+
+/* diferenciais */
+.diff{background:var(--sand)}
+.split-head{display:grid;grid-template-columns:1fr 1fr;gap:32px 64px;align-items:end;margin-bottom:56px}
+.split-head .lead{justify-self:end}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.trio figure{display:grid;gap:22px}
+.trio .ph{aspect-ratio:1/1;border-radius:var(--r);background:var(--ink-2) center/cover no-repeat}
+.trio h3{font-size:22px;font-weight:800}
+.trio p{color:var(--muted);font-size:15.5px;margin-top:8px;max-width:36ch}
+.also{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;border-top:1px solid #D9D6CE}
+.also div{padding:28px 28px 0;border-left:1px solid #D9D6CE}
+.also div:first-child{border-left:0;padding-left:0}
+.also b{display:block;font-size:17px}
+.also span{color:var(--muted);font-size:15px}
+
+/* produtos */
+.prod-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.prod-head p{color:var(--muted);margin-top:12px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pc{position:relative;aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;background:var(--ink-2) center/cover no-repeat;color:#fff;display:flex;align-items:flex-end;padding:24px;transition:transform .35s}
+.pc::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(9,14,19,.78))}
+.pc:hover{transform:translateY(-4px)}
+.pc div{position:relative;width:100%;display:flex;justify-content:space-between;align-items:end;gap:12px}
+.pc b{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.pc small{display:block;font-size:13.5px;color:rgba(255,255,255,.78);font-weight:500;margin-top:4px}
+.pc i{font-style:normal;width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(255,255,255,.6);display:grid;place-items:center;flex:none;transition:background .2s}
+.pc:hover i{background:#fff;color:var(--ink)}
+.prod-foot{margin-top:30px;color:var(--muted);font-size:15.5px}
+.prod-foot a{color:var(--ink);font-weight:700;border-bottom:1.5px solid var(--lime)}
+
+/* galeria */
+.gal{padding-top:0}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:14px;margin-top:44px}
+.g{position:relative;border-radius:14px;overflow:hidden;background:var(--sand) center/cover no-repeat}
+.g::after{content:attr(data-t);position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;color:#fff;font-size:13.5px;font-weight:600;background:linear-gradient(180deg,transparent,rgba(9,14,19,.62))}
+.g1{grid-column:span 2;grid-row:span 2}.g6{grid-column:span 2}
+.gal3{grid-template-columns:2fr 1fr;grid-auto-rows:270px}.gal3 .g1{grid-column:1;grid-row:span 2}
+
+/* arquitetos */
+.arch{background:var(--sand)}
+.arch-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center}
+.arch h2{margin-bottom:22px}
+.arch p{color:var(--muted);font-size:16.5px;max-width:50ch}
+.ticks{display:grid;gap:14px;margin:30px 0 36px;list-style:none}
+.ticks li{display:flex;gap:14px;font-size:16px}
+.ticks svg{width:22px;height:22px;flex:none;color:var(--lime-d);margin-top:1px}
+.region{background:var(--blue);color:#fff;border-radius:22px;padding:40px 36px}
+.region h3{font-size:24px;font-weight:800}
+.region>p{color:#D5E5F3;font-size:15px;margin:8px 0 22px}
+.region ul{list-style:none}
+.region li{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid rgba(255,255,255,.2);font-weight:600}
+.region li span{color:#D7F0B5;font-size:13.5px;font-weight:600;text-align:right}
+
+/* processo */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:52px}
+.step{padding:30px 28px 0 0;position:relative}
+.step::before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 5px var(--paper)}
+.step em{font-style:normal;font-size:13px;font-weight:800;color:var(--blue);font-variant-numeric:tabular-nums}
+.step h3{font-size:21px;font-weight:800;margin:28px 0 10px}
+.step p{color:var(--muted);font-size:15px}
+
+/* depoimentos */
+.rev{background:var(--ink);color:#fff}
+.rev-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:56px}
+.rev-head a{color:#fff}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.quotes blockquote{border-top:1px solid rgba(255,255,255,.18);padding-top:30px}
+.quotes q{display:block;font-family:var(--f-serif);font-size:clamp(26px,2.6vw,36px);line-height:1.18;quotes:"“" "”"}
+.quotes footer{margin-top:24px;font-size:14.5px;font-weight:700}
+.quotes footer span{display:block;font-weight:500;color:#9AA8B3;margin-top:2px}
+.quotes .st{color:#E9A90E;letter-spacing:3px;font-size:14px;margin-bottom:18px}
+
+/* contato */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:start}
+.contact-grid h2{margin-bottom:20px}
+.clist{display:grid;gap:16px;margin-top:36px;font-size:15.5px}
+.clist div{display:flex;gap:12px;align-items:flex-start}
+.clist svg{width:20px;height:20px;flex:none;margin-top:2px;color:var(--blue)}
+.clist a{border-bottom:1px solid var(--line)}
+form{background:var(--sand);border-radius:22px;padding:40px;display:grid;gap:16px}
+form h3{font-size:22px;font-weight:800}
+form>p{color:var(--muted);font-size:14.5px;margin-top:-8px}
+label{display:grid;gap:7px;font-size:13.5px;font-weight:700;color:var(--ink-2)}
+input,select,textarea{font:inherit;font-size:15.5px;font-weight:500;padding:14px;border:1.5px solid #DAD6CD;border-radius:12px;background:#fff;color:var(--ink);width:100%;min-width:0}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);outline:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+details summary{cursor:pointer;font-size:14px;font-weight:700;color:var(--blue);list-style:none}
+details summary::-webkit-details-marker{display:none}
+details[open] summary{margin-bottom:10px}
+form .btn{justify-content:center;width:100%;margin-top:4px}
+
+footer.site{border-top:1px solid var(--line);padding-block:44px 30px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.foot .word{color:var(--ink)}
+.social{display:flex;gap:10px}
+.social a{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--ink-2)}
+.social a:hover{border-color:var(--ink)}
+.social svg{width:18px;height:18px}
+.copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:28px;font-size:13px;color:var(--muted)}
+
+.fab{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -10px rgba(16,90,48,.7)}
+.fab svg{width:28px;height:28px}
+
+@media (max-width:1000px){
+  .menu{display:none}
+  .split-head,.arch-grid,.contact-grid{grid-template-columns:1fr;gap:28px}
+  .split-head .lead{justify-self:start}
+  .arch-grid,.contact-grid{gap:48px}
+  .trio{grid-template-columns:1fr 1fr 1fr;gap:18px}
+  .cards{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:44px}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px}
+}
+@media (max-width:680px){
+  .nav .btn span{display:none}.nav .btn{padding:12px}
+  .word{font-size:15px;letter-spacing:.26em}
+  .hero{min-height:clamp(560px,88vh,720px)}
+  .hero::before{background:linear-gradient(180deg,rgba(9,14,19,.55) 0%,rgba(9,14,19,.35) 35%,rgba(9,14,19,.88) 100%)}
+  .hero-body{align-items:flex-end;padding-block:24px 48px}
+  .proof .wrap>div{padding:22px 0 22px 12px}
+  .proof .wrap>div:first-child{padding-left:0}
+  .proof strong{font-size:26px}
+  .proof span{font-size:12.5px;margin-top:6px;line-height:1.35}
+  .proof .stars{display:block;font-size:11px;letter-spacing:1px}
+  .trio{grid-template-columns:1fr;gap:40px}
+  .trio .ph{aspect-ratio:4/3}
+  .also{grid-template-columns:1fr;margin-top:44px}
+  .also div{border-left:0;border-top:1px solid #D9D6CE;padding:20px 0}
+  .also div:first-child{border-top:0}
+  .cards{grid-template-columns:1fr 1fr;gap:12px}
+  .pc{padding:16px}.pc b{font-size:18px}.pc small{display:none}.pc i{width:32px;height:32px}
+  .gallery{grid-auto-rows:150px;gap:10px}
+  .gal3{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gal3 .g1{grid-column:span 2;grid-row:span 1;min-height:220px}
+  .g::after{font-size:12px;padding:30px 10px 10px}
+  .steps{grid-template-columns:1fr}
+  .quotes{grid-template-columns:1fr;gap:40px}
+  .region{padding:30px 22px}
+  form{padding:28px 20px}
+  .row2{grid-template-columns:1fr}
+  .fab{width:52px;height:52px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="hero" id="topo">
+  <div class="wrap nav">
+    <a href="#topo" class="word" aria-label="Alumglass Esquadrias">ALUM<b>GLASS</b></a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#produtos">Produtos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#arquitetos">Arquitetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/5519974081850?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.8-.7 13.6 13.6 0 0 1-5.1-4.6c-.4-.5-1-1.6-1-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.3.5-.4.5c-.2.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+      <span>Solicitar orçamento</span>
+    </a>
+  </div>
+  <div class="wrap hero-body">
+    <div>
+      <h1>Esquadrias de alto padrão, fabricadas e instaladas por nós.</h1>
+      <p>Alumínio e vidro sob medida para casas e obras comerciais em Campinas e região, do projeto à instalação.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="https://wa.me/5519974081850?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.8-.7 13.6 13.6 0 0 1-5.1-4.6c-.4-.5-1-1.6-1-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.3.5-.4.5c-.2.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a class="tlink" href="#projetos">Ver projetos <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="proof" aria-label="Números">
+  <div class="wrap">
+    <div><strong>700+</strong><span>contratos entregues</span></div>
+    <div><strong>16 anos</strong><span>fabricando em Campinas</span></div>
+    <div><strong>938</strong><span><span class="stars" aria-hidden="true">★★★★★</span> avaliações no Google</span></div>
+  </div>
+</section>
+
+<section class="diff" id="diferenciais">
+  <div class="wrap">
+    <div class="split-head">
+      <h2>Esquadria não é tudo igual.</h2>
+      <p class="lead">O preço aparece no orçamento. A qualidade aparece nos anos seguintes, na vedação, no deslizar da folha e no acabamento. Por isso fazemos tudo dentro de casa, da medição à instalação.</p>
+    </div>
+    <div class="trio">
+      <figure>
+        <div class="ph" style="background-image:url(img/g8.jpg)" role="img" aria-label="Fechamento em vidro de precisão"></div>
+        <figcaption><h3>Maquinário de ponta</h3><p>Centro de usinagem, corte de dupla cabeça e software do orçamento à expedição. Precisão em cada peça.</p></figcaption>
+      </figure>
+      <figure>
+        <div class="ph" style="background-image:url(img/g5.jpg)" role="img" aria-label="Esquadria integrada ao paisagismo"></div>
+        <figcaption><h3>Equipe própria</h3><p>Quem fabrica e instala é da Alumglass, treinado internamente. Nada de mão de obra terceirizada.</p></figcaption>
+      </figure>
+      <figure>
+        <div class="ph" style="background-image:url(img/story.jpg)" role="img" aria-label="Sala com pé-direito duplo e janelas altas"></div>
+        <figcaption><h3>Medição com o arquiteto</h3><p>Nossa equipe de medição trabalha junto com o arquiteto e o engenheiro. Detalhes resolvidos antes da obra.</p></figcaption>
+      </figure>
+    </div>
+    <div class="also">
+      <div><b>Sistemas homologados</b><span>Linhas de renome, com suporte técnico do fabricante.</span></div>
+      <div><b>Acessórios de primeira linha</b><span>Fechos, roldanas e vedações que definem a durabilidade.</span></div>
+      <div><b>Entrega no prazo</b><span>Reclamações em 16 anos? Uma ou duas, todas resolvidas.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="produtos">
+  <div class="wrap">
+    <div class="prod-head">
+      <div><h2>O que fabricamos</h2><p>Sob medida, em alumínio e vidro, para obras de médio e alto padrão.</p></div>
+    </div>
+    <div class="cards">
+      <a class="pc" href="https://wa.me/5519974081850?text=Ol%C3%A1!%20Tenho%20interesse%20em%20portas." target="_blank" rel="noopener" style="background-image:url(img/g2.jpg)"><div><span><b>Portas</b><small>De abrir, correr e pivotantes</small></span><i aria-hidden="true">→</i></div></a>
+      <a class="pc" href="https://wa.me/5519974081850?text=Ol%C3%A1!%20Tenho%20interesse%20em%20janelas." target="_blank" rel="noopener" style="background-image:url(img/g7.jpg)"><div><span><b>Janelas</b><small>Mais luz e conforto térmico</small></span><i aria-hidden="true">→</i></div></a>
+      <a class="pc" href="https://wa.me/5519974081850?text=Ol%C3%A1!%20Tenho%20interesse%20em%20fachadas%20e%20fechamentos." target="_blank" rel="noopener" style="background-image:url(img/g6.jpg)"><div><span><b>Fachadas</b><small>Panos de vidro e esquadrias</small></span><i aria-hidden="true">→</i></div></a>
+      <a class="pc" href="https://wa.me/5519974081850?text=Ol%C3%A1!%20Tenho%20interesse%20em%20fechamentos%20em%20vidro." target="_blank" rel="noopener" style="background-image:url(img/hero2.jpg)"><div><span><b>Fechamentos</b><small>Varandas e áreas em vidro</small></span><i aria-hidden="true">→</i></div></a>
+    </div>
+    <p class="prod-foot">Também fabricamos portões, desenvolvemos projetos personalizados e fazemos manutenção com reposição de peças. <a href="#contato">Fale com a gente</a></p>
+  </div>
+</section>
+
+<section class="gal" id="projetos">
+  <div class="wrap">
+    <div class="prod-head">
+      <div><h2>Ambientes que inspiram</h2><p>Referências do padrão de acabamento que entregamos.</p></div>
+      <a class="tlink" href="https://www.instagram.com/alumglassesquadrias" target="_blank" rel="noopener">Ver mais no Instagram <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="gallery gal3">
+      <div class="g g1" style="background-image:url(img/g1.jpg)" data-t="Residência com piscina"></div>
+      <div class="g" style="background-image:url(img/g3.jpg)" data-t="Pano de vidro panorâmico"></div>
+      <div class="g" style="background-image:url(img/g4.jpg)" data-t="Sala integrada à varanda"></div>
+    </div>
+  </div>
+</section>
+
+<section class="arch" id="arquitetos">
+  <div class="wrap arch-grid">
+    <div>
+      <h2>Para arquitetos, engenheiros e construtoras.</h2>
+      <p>Seu projeto executado exatamente como foi desenhado. Trabalhamos junto com o escritório da especificação à entrega da obra.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>Apoio técnico na escolha de linhas, vidros e vedações</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>Medição por equipe própria, alinhada ao projeto</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>Cronograma respeitado, sem travar as outras frentes</li>
+      </ul>
+      <a class="btn btn-ink" href="https://wa.me/5519974081850?text=Ol%C3%A1!%20Sou%20arquiteto(a)%2Fconstrutora%20e%20gostaria%20de%20falar%20sobre%20um%20projeto." target="_blank" rel="noopener">Falar sobre um projeto</a>
+    </div>
+    <aside class="region">
+      <h3>Onde atendemos</h3>
+      <p>Sede em Campinas. Para obras de médio e alto padrão, vamos até onde o projeto estiver.</p>
+      <ul>
+        <li>Campinas e região <span>até 100 km</span></li>
+        <li>Litoral Norte e Sul de SP <span>sob consulta</span></li>
+        <li>Santa Catarina <span>obras em Balneário Camboriú</span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="processo">
+  <div class="wrap">
+    <h2>Do projeto à obra entregue.</h2>
+    <div class="steps">
+      <div class="step"><em>01</em><h3>Atendimento</h3><p>Você conta o que precisa pelo WhatsApp e já recebe orientação técnica.</p></div>
+      <div class="step"><em>02</em><h3>Medição e projeto</h3><p>Definimos medidas, linhas, vidros e acabamentos com você ou seu arquiteto.</p></div>
+      <div class="step"><em>03</em><h3>Fabricação</h3><p>Produção própria, com controle de qualidade em cada peça.</p></div>
+      <div class="step"><em>04</em><h3>Instalação</h3><p>Equipe própria instala e acompanha o pós-obra.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rev">
+  <div class="wrap">
+    <div class="rev-head">
+      <h2>Quem contratou, recomenda.</h2>
+      <a class="tlink" href="https://www.google.com/search?q=Alumglass+Esquadrias+Campinas" target="_blank" rel="noopener">Ver avaliações no Google <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="quotes">
+      <blockquote><div class="st" aria-label="5 estrelas">★★★★★</div><q>Esquadrias com alto padrão de qualidade, durabilidade garantida e um preço que cabe no seu orçamento.</q><footer>Lanya Vieira<span>Avaliação no Google</span></footer></blockquote>
+      <blockquote><div class="st" aria-label="5 estrelas">★★★★★</div><q>Produtos de alta qualidade com um atendimento que faz você se sentir valorizado em cada detalhe.</q><footer>Isabelle<span>Avaliação no Google</span></footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Vamos falar sobre a sua obra?</h2>
+      <p class="lead">Responda em 30 segundos e receba o retorno da nossa equipe pelo WhatsApp.</p>
+      <div class="clist">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5Z"/></svg><span>WhatsApp <a href="https://wa.me/5519974081850" target="_blank" rel="noopener">(19) 97408-1850</a></span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg><span>Telefone (19) 3933-1464</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>sac@alumglassesquadrias.com.br</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>R. Ana Santina Pereira, 520 – G2 – Parque São Martinho, Campinas – SP</span></div>
+      </div>
+    </div>
+    <form id="orc" novalidate>
+      <h3>Solicite seu orçamento</h3>
+      <p>Atendemos obras de médio e alto padrão.</p>
+      <label for="f-nome">Nome<input id="f-nome" name="nome" required placeholder="Seu nome" autocomplete="name"></label>
+      <div class="row2">
+        <label for="f-perfil">Você é
+          <select id="f-perfil" name="perfil"><option>Proprietário(a) do imóvel</option><option>Arquiteto(a) / Designer</option><option>Engenheiro(a)</option><option>Construtora / Incorporadora</option></select>
+        </label>
+        <label for="f-cidade">Cidade da obra<input id="f-cidade" name="cidade" required placeholder="Ex.: Campinas"></label>
+      </div>
+      <div class="row2">
+        <label for="f-servico">O que você precisa?
+          <select id="f-servico" name="servico"><option>Portas</option><option>Janelas</option><option>Fachadas / fechamentos</option><option>Portões</option><option>Projeto personalizado</option><option>Manutenção</option></select>
+        </label>
+        <label for="f-fase">Fase da obra
+          <select id="f-fase" name="fase"><option>Ainda em projeto</option><option>Em construção</option><option>Pronta para esquadrias</option><option>Reforma / troca</option></select>
+        </label>
+      </div>
+      <details><summary>+ Adicionar detalhes (opcional)</summary><textarea id="f-msg" name="msg" rows="3" placeholder="Medidas, prazo, referências..."></textarea></details>
+      <button class="btn btn-wa" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.8-.7 13.6 13.6 0 0 1-5.1-4.6c-.4-.5-1-1.6-1-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.3.5-.4.5c-.2.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+        Enviar pelo WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot">
+      <a href="#topo" class="word">ALUM<b>GLASS</b></a>
+      <div class="social">
+        <a href="https://www.instagram.com/alumglassesquadrias" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/alumglassesquadrias" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8V6.5c0-.8.2-1.5 1.5-1.5H17V2h-2.6C11.6 2 11 3.9 11 6.1V8H9v3h2v11h3V11h2.6l.4-3H14Z"/></svg></a>
+      </div>
+    </div>
+    <div class="copy"><span>© Alumglass Esquadrias · Campinas – SP</span><span>Imagens ilustrativas</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5519974081850?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 0 1-1.8-.7 13.6 13.6 0 0 1-5.1-4.6c-.4-.5-1-1.6-1-3s.7-2.1 1-2.4c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.3.5-.4.5c-.2.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.5 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+</a>
+
+<script>
+document.getElementById('orc').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=new FormData(this);
+  if(!f.get('nome')||!f.get('cidade')){
+    (this.querySelector('#f-nome').value?this.querySelector('#f-cidade'):this.querySelector('#f-nome')).focus();
+    return;
+  }
+  var t='Olá! Gostaria de um orçamento.\n\nNome: '+f.get('nome')+
+        '\nPerfil: '+f.get('perfil')+
+        '\nCidade da obra: '+f.get('cidade')+
+        '\nPreciso de: '+f.get('servico')+
+        '\nFase da obra: '+f.get('fase')+
+        (f.get('msg')?'\nDetalhes: '+f.get('msg'):'');
+  var a=document.createElement('a');
+  a.href='https://wa.me/5519974081850?text='+encodeURIComponent(t);
+  a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+});
+</script>
+
+</body>
+</html>
